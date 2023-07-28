@@ -29,7 +29,7 @@
 :root {
     --cor-fundo: rgb(173, 167, 230);
     --cor-fonte: black;
-    --cor-hover: red;
+    --cor-hover: rgb(67, 212, 223);
 }
 a {
     text-decoration: none;
@@ -51,4 +51,48 @@ ul {
     height: 100vh;
     position: fixed;
     background-color: var(--cor-fundo);
+}
+
+.menu a:hover {
+   background-color: var(--cor-hover);
+}
+
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.hamb{ 
+    cursor: pointer;
+    float: right;
+    padding: 35px 20px;
+}
+
+.hamb-line{
+    display: block;
+    background-color: var(--cor-fonte);
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamp-line::before,
+.hamp-line::after{
+    background-color: var(--cor-fonte);
+    counter-reset: ;
+    display: block;
+    height: ;
+    position: absolute;
+    transform: all .2s ease-out;
+    width: 100%;
+}
+.hamp-line::before{
+    top:5px;
+}
+.hamp-line::after{
+    top: -5px;
+}
+.side-menu{
+    display: none;
 }
