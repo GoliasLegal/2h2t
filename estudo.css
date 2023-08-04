@@ -4,7 +4,7 @@
     height: 40vh;
 }
 .azul{
-    background-color: blue;
+    background-color: rgb(15, 15, 211);
     grid-area: azul;
     height: 40vh;
 }
